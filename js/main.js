@@ -40,7 +40,26 @@ console.log(trois);
 // 3. Exo 3
 //   - Créez un personnage avec un nom un et prenom et donnez lui une méthode 'sePresenter' qui fera un console.log "Bonjour je m'appelle " avec son nom puis son prénom.
 
+let quatre = {
+    nom: 'doee',
+    prenom: 'omzzz',
+    sePresenter(){
+        console.log(`Bonjour je m'appelle ${quatre.nom} ${quatre.prenom}`);
+    }
+    
+}
+quatre.sePresenter()
 // 4. Exo 4
 //   - Créer un objet avec un nom et une méthode
 //   - La méthode de votre objet lance un prompt permetant de changer son age
 //   - Une alert renvoi "[nom de l'objet] a [age de l'objet] ans"
+
+let cinq= {
+    nom: "cinquieme",
+    changeAge(){
+        let ag = +prompt('quel age?')
+        cinq.age = ag
+    }
+}
+cinq.changeAge()
+alert(cinq.nom +' '+ cinq.age)
