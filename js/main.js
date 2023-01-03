@@ -32,6 +32,11 @@ let trois = {
 //   - Son nom doit valoir le nom du personnage1
 //   - Son age doit valoir celui du personnage2
 //   - Et sa taille doit être rempli avec la vale
+
+trois.nom = moi.nom
+trois.age = deux.age
+console.log(trois);
+
 // 3. Exo 3
 //   - Créez un personnage avec un nom un et prenom et donnez lui une méthode 'sePresenter' qui fera un console.log "Bonjour je m'appelle " avec son nom puis son prénom.
 
