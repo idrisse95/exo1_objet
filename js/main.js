@@ -15,6 +15,18 @@ console.log(moi.age);
 // 2. Exo 2 
 //   - Créez un second et un 3eme personnage (le 3eme personnage doit rester vide)
 
+let deux = {
+    nom: 'deux',
+    prenom: 'ilias',
+    age: 19,
+    taille: 1.99
+}
+
+let trois = {
+    
+}
+
+
 // 3. Exo 3
 //   - Remplir les propriétées du 3eme personnage
 //   - Son nom doit valoir le nom du personnage1
