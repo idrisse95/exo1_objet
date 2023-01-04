@@ -63,3 +63,42 @@ let cinq= {
 }
 cinq.changeAge()
 alert(cinq.nom +' '+ cinq.age)
+
+
+
+
+
+
+
+
+
+
+
+// Kadri 🐳🦍🐦👺 — Aujourd’hui à 09:09
+// ## Exo 1
+
+// ### Créer deux personnages du nom de François et Sergio
+// ### Donnez leur à chacun une propriété panier (tableau) contenant tous deux des ingrédients différents du super marché, par exemple huile,tomate,pain etc..
+// ### Rajouter à François la méthode derober, qui prend 2 aliments du panier de Sergio et les met dans son panier.
+
+
+let François = {
+    ingredient : ['huile','tomate','carotte','pain','thon','poirreau'],
+    mesAliment(){
+        Sergio.ingredient = François.ingredient.push('obj1','obj2')
+        
+    }
+}
+
+let Sergio = {
+    ingredient : ['huile','tomate','carotte','pain','thon','poirreau','obj1','obj2'] ,
+    retraiAliment(){
+        Sergio.ingredient.pop()
+        Sergio.ingredient.pop()
+    } 
+}
+
+Sergio.retraiAliment()
+console.log(Sergio.ingredient);
+François.mesAliment()
+console.log(François.ingredient);
