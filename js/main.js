@@ -85,7 +85,7 @@ alert(cinq.nom +' '+ cinq.age)
 let François = {
     ingredient : ['huile','tomate','carotte','pain','thon','poirreau'],
     mesAliment(){
-        Sergio.ingredient = François.ingredient.push('obj1','obj2')
+        François.ingredient.push('obj1','obj2')
         
     }
 }
@@ -98,7 +98,8 @@ let Sergio = {
     } 
 }
 
-Sergio.retraiAliment()
-console.log(Sergio.ingredient);
+
 François.mesAliment()
 console.log(François.ingredient);
+Sergio.retraiAliment()
+console.log(Sergio.ingredient);
