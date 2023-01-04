@@ -54,15 +54,15 @@ quatre.sePresenter()
 //   - La méthode de votre objet lance un prompt permetant de changer son age
 //   - Une alert renvoi "[nom de l'objet] a [age de l'objet] ans"
 
-let cinq= {
-    nom: "cinquieme",
-    changeAge(){
-        let ag = +prompt('quel age?')
-        cinq.age = ag
-    }
-}
-cinq.changeAge()
-alert(cinq.nom +' '+ cinq.age)
+// let cinq= {
+//     nom: "cinquieme",
+//     changeAge(){
+//         // let ag = +prompt('quel age?')
+//         cinq.age = ag
+//     }
+// }
+// cinq.changeAge()
+// alert(cinq.nom +' '+ cinq.age)
 
 
 
@@ -119,24 +119,48 @@ console.log(Sergio.ingredient);
 
 // ### Créer un objet "vieille_dame" avec une propriété "âge" assez élevée une propriété "nom" contenant un "prenom" et un "nom de famille" (/!\ Objet dans objet), une propriété "moral" avec comme valeur "mal" et une propriété "objet" par exemple une canne 
 
-let vieille_dame = {
-    age : 97,
-    nom : 'adelinne',
-    nome_de_famille : {
-        moral : 'mal',
-        objet : 'canne',   
-    }
-   
 
-}
 
 // ### une méthode "parler" qui selon son moral fait une alert différente, si son moral = "mal" alors elle dira "Vous me dérangez et le frappe avec son objet", si son moral = "bien" alors elle dira "bonjour" + le nom du vieil_homme.
 
-    parler = {
-        
-    }
+let vieux = {
+ vieille_dame :{
+    age : 97,
+    nom : 'adelinne',
+    parler : {
+
+        moral(){
+            let mor = prompt('quel es votre moral?')
+            if (mor == 'mal') {
+                alert(`Vous me dérangez et le frappe avec son objet`)
+                
+            }
+            else if(mor == 'bien'){
+                alert(`bonjour ${vieux.vieil_homme.nom}`)
+            }
+        }},
+    
+    nome_de_famille : {
+        moral : 'mal',
+        objet : 'canne',   
+    }},
+    
+   
+
+
+
 
 
 // ### Créer ensuite l'objet vieil_homme avec une propriété "nom" et une méthode "adoucir" qui change le moral de la "vieille_dame" en "bien".
 
+ vieil_homme :{
+    nom : 'partik',
+    adoucir(){
+        vieux.vieille_dame.nome_de_famille.moral = 'bien'
+    }
+    
+    }}
 // ### Faites parler la vieille dame, puis lancer la méthode adoucir du vieil homme et relancer la méthode parler de la vieille dame.
+vieux.vieille_dame.parler.moral()
+vieux.vieil_homme.adoucir()
+console.log(vieux.vieille_dame);
