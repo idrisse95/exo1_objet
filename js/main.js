@@ -54,15 +54,15 @@ quatre.sePresenter()
 //   - La méthode de votre objet lance un prompt permetant de changer son age
 //   - Une alert renvoi "[nom de l'objet] a [age de l'objet] ans"
 
-// let cinq= {
-//     nom: "cinquieme",
-//     changeAge(){
-//         // let ag = +prompt('quel age?')
-//         cinq.age = ag
-//     }
-// }
-// cinq.changeAge()
-// alert(cinq.nom +' '+ cinq.age)
+let cinq= {
+    nom: "cinquieme",
+    changeAge(){
+        let ag = +prompt('quel age?')
+        cinq.age = ag
+    }
+}
+cinq.changeAge()
+alert(cinq.nom +' '+ cinq.age)
 
 
 
@@ -126,7 +126,7 @@ console.log(Sergio.ingredient);
 let vieux = {
  vieille_dame :{
     age : 97,
-    nom : 'adelinne',
+    nom : {prenom:'adelinne',nom_de_famille:'derik'},
     parler : {
 
         moral(){
@@ -140,10 +140,10 @@ let vieux = {
             }
         }},
     
-    nome_de_famille : {
-        moral : 'mal',
-        objet : 'canne',   
-    }},
+    
+    moral : 'mal',
+    objet : 'canne',   
+    },
     
    
 
@@ -156,7 +156,7 @@ let vieux = {
  vieil_homme :{
     nom : 'partik',
     adoucir(){
-        vieux.vieille_dame.nome_de_famille.moral = 'bien'
+        vieux.vieille_dame.moral = 'biien'
     }
     
     }}
