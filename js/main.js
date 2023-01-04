@@ -130,13 +130,21 @@ let vieux = {
     parler : {
 
         moral(){
-            let mor = prompt('quel es votre moral?')
-            if (mor == 'mal') {
-                alert(`Vous me dérangez et le frappe avec son objet`)
+            // let mor = prompt('quel es votre moral?')
+            // if (mor == 'mal') {
+            //     alert(`Vous me dérangez et le frappe avec sa ${vieux.vieille_dame.objet}`)
                 
-            }
-            else if(mor == 'bien'){
-                alert(`bonjour ${vieux.vieil_homme.nom}`)
+            // }
+            // else if(mor == 'bien'){
+            //     alert(`bonjour ${vieux.vieil_homme.nom}`)
+            // }
+
+            switch(vieux.vieille_dame.moral){
+                case 'mal':
+                    alert(`Vous me dérangez et le frappe avec sa ${vieux.vieille_dame.objet}`);
+                    break;
+                case 'bien':
+                    alert(`bonjour ${vieux.vieil_homme.nom}`)
             }
         }},
     
@@ -156,11 +164,12 @@ let vieux = {
  vieil_homme :{
     nom : 'partik',
     adoucir(){
-        vieux.vieille_dame.moral = 'biien'
+        vieux.vieille_dame.moral = 'bien'
     }
     
     }}
 // ### Faites parler la vieille dame, puis lancer la méthode adoucir du vieil homme et relancer la méthode parler de la vieille dame.
-vieux.vieille_dame.parler.moral()
+ 
 vieux.vieil_homme.adoucir()
-console.log(vieux.vieille_dame);
+vieux.vieille_dame.parler.moral()
+
